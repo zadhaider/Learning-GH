@@ -21,14 +21,15 @@ struct ContentView: View {
                 
                 Text("SwiftUI Slots!")
                     .font(.title)
+                Divider()
                 Spacer()
                 HStack {
                     Text("Credit :")
                     Text(String(score))
                 }
-            
+
                     Spacer()
-            
+                Divider()
                 HStack {
                     Spacer()
                     Image(img1).resizable()
@@ -109,10 +110,10 @@ struct ContentView: View {
                     print("\(star) \(apple) \(cherry)")
                     
                     if star == 3 || apple == 3 || cherry == 3{
-                        score += 10
+                        score += 100
                     }
                     else if score >= 500 {
-                        score -= 100
+                        score -= 10
                     }
                     
                     
